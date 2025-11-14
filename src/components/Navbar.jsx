@@ -8,13 +8,12 @@ const Navbar = ({show}) => {
      <nav className={show ? 'nav mobile-nav': 'nav'}>
       <ul>
         <Link to={"/"}>Home</Link>
-        <Link to={"/about"}>About</Link>
         <Link to={"/resume"}>Resume</Link>
         <Link to={"/portfolio"}>Portfolio</Link>
       </ul>
       <div className="phone">
       <CiMobile3/>
-      <span>0310-6507521</span>
+      <span>8077628541</span>
       </div>
      </nav>
     </>

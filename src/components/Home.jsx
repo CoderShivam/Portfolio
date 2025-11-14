@@ -2,13 +2,8 @@ import React from "react";
 import Navbar from "./Navbar";
 import { TbGridDots } from "react-icons/tb";
 import { Link } from "react-router-dom";
-import {
-  AiFillInstagram,
-  AiFillFacebook,
-  AiFillLinkedin,
-} from "react-icons/ai";
-import { FaGithubSquare, FaYoutube, FaWhatsapp } from "react-icons/fa";
-import { RiTwitterXLine } from "react-icons/ri";
+import { AiFillLinkedin } from "react-icons/ai";
+import { FaGithubSquare, FaWhatsapp } from "react-icons/fa";
 
 const Home = ({ show, setShow }) => {
   return (
@@ -21,56 +16,33 @@ const Home = ({ show, setShow }) => {
           <h1>GUPTA</h1>
           <p>Web Developer</p>
           <div className="btns">
-            <Link
-              to="https://console.cloudinary.com/app/c-79d3e2e2def8a085f63840ed393573/assets/media_library/search/asset/42e07e5652fb7dae0d95ae1f5df4dd52/manage/summary?q=&view_mode=mosaic&context=manage"
+            <a
+              href="https://drive.google.com/uc?export=download&id=1qP7GtgmbO1RborhyQiKDnznoOkHfc-3s"
               target="_blank"
+              rel="noreferrer"
             >
               Resume
-            </Link>
+            </a>
             <Link to="/portfolio">Portfolio</Link>
           </div>
         </div>
         <footer>
           <ul>
-            <Link
-              to={"https://www.instagram.com/z_4_zeeshuuu/"}
+            <a
+              href="https://www.linkedin.com/in/shivam-gupta-b373092a6/"
               target="_blank"
-            >
-              <AiFillInstagram />
-            </Link>
-            <Link
-              to={
-                "https://www.facebook.com/people/Muhammad-Zeeshan-Khan/pfbid0r2fy5gefN1sTvwFSJYMBHkbij6eXHwzZMKDYemTYVu6Y7H2A4vsuDukaPaYRAjozl/"
-              }
-              target="_blank"
-            >
-              <AiFillFacebook />
-            </Link>
-            <Link
-              to={"https://www.linkedin.com/in/muhammad-zeeshan-khan-dev/"}
-              target="_blank"
+              rel="noreferrer"
             >
               <AiFillLinkedin />
-            </Link>
-            <Link to={"https://github.com/Zeeshu911"} target="_blank">
-              <RiTwitterXLine />
-            </Link>
-            <Link to={"https://github.com/Zeeshu911"} target="_blank">
+            </a>
+            <a href="https://github.com/CoderShivam" target="_blank" rel="noreferrer">
               <FaGithubSquare />
-            </Link>
-            <Link to={""} target="_blank">
+            </a>
+            <a href="https://wa.me/918077628541" target="_blank" rel="noreferrer">
               <FaWhatsapp />
-            </Link>
-            <Link
-              to={"https://www.youtube.com/@CodeWithZeeshu"}
-              target="_blank"
-            >
-              <FaYoutube />
-            </Link>
+            </a>
           </ul>
-          <a className="download-btn" href="/Resume.pdf" download="Resume.pdf">
-            [Download CV]
-          </a>
+          <span>© 2024 Shivam Gupta. All rights reserved.</span>
         </footer>
       </section>
     </>
