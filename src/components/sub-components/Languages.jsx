@@ -10,18 +10,8 @@ const Languages = () => {
     },
     {
       _id: "2",
-      title: "Urdu",
-      progress: 95
-    },
-    {
-      _id: "3",
       title: "Hindi",
       progress: 80
-    },
-    {
-      _id: "4",
-      title: "Pashto",
-      progress: 100
     },
   ]
   return (

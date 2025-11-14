@@ -8,21 +8,21 @@ const Portfolio = ({ show, setShow }) => {
       _id: "1",
       title: "SerendipityMind – Mental Wellness Platform",
       category: "MERN STACK",
-      thumbnail: "/serendipity.png",
+      thumbnail: "A_2D_digital_illustration_depicts_a_mental_wellnes.png",
       projectUrl: "https://github.com/CoderShivam/SerendityMind",
     },
     {
       _id: "2",
       title: "Job_RaShPi – Career Guidance Platform",
       category: "MERN STACK",
-      thumbnail: "/jobrashpi.png",
+      thumbnail: "A_flat-style_digital_illustration_depicts_four_stu.png",
       projectUrl: "https://github.com/CoderShivam/job_rashpi/tree/shivam",
     },
     {
       _id: "3",
       title: "Personal Portfolio Website",
       category: "Frontend",
-      thumbnail: "/portfolio.png",
+      thumbnail: "A_vector-based_digital_illustration_serves_as_an_i.png",
       projectUrl: "https://github.com/CoderShivam",
     },
   ];
@@ -34,7 +34,7 @@ const Portfolio = ({ show, setShow }) => {
 
       <div className="banner">
         <div className="header">
-          <img src="/star.png" alt="star" /> 
+          <img src="/star.png" alt="star" />
           <h1>PROJECTS</h1>
           <img src="/star.png" alt="star" />
         </div>
@@ -43,24 +43,22 @@ const Portfolio = ({ show, setShow }) => {
           <div className="first-column">
             {projects.map((element) => {
               return (
-                <div className="card" key={element._id}>
-                  <img src={element.thumbnail} alt="project-thumbnail" />
-                  <div>
-                    <span>
-                      <p>{element.category}</p>
-                      <p>{element.title}</p>
-                    </span>
-                    <span>
-                      <a
-                        href={element.projectUrl}
-                        target="_blank"
-                        rel="noreferrer"
-                      >
-                        <img src="/arrow.svg" alt="arrow" />
-                      </a>
-                    </span>
+                <a
+                  href={element.projectUrl}
+                  target="_blank"
+                  rel="noreferrer"
+                  key={element._id}
+                >
+                  <div className="card" style={{ cursor: "pointer" }}>
+                    <img src={element.thumbnail} alt="project-thumbnail" />
+                    <div>
+                      <span>
+                        <p>{element.category}</p>
+                        <p>{element.title}</p>
+                      </span>
+                    </div>
                   </div>
-                </div>
+                </a>
               );
             })}
           </div>

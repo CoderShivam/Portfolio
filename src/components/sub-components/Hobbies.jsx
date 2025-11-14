@@ -13,10 +13,6 @@ const Hobbies = () => {
           <SiEpicgames/>
           GAMING
         </div>
-        <div>
-          <AiFillCamera/>
-          PHOTOGRAPHY
-        </div>
       </span>
       <span>
         <div>

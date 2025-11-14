@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import HOME from "./components/Home";
 import Resume from "./components/Resume";
 import Portfolio from "./components/Portfolio";
+import About from "./components/About";
 import { useState } from "react";
 
 const App = () => {
@@ -13,7 +14,7 @@ const App = () => {
       <Router>
         <Routes>
           <Route path={"/"} element={<HOME show={show} setShow={setShow}/>}/>
-
+          <Route path={"/about"} element={<About show={show} setShow={setShow}/>}/>
           <Route path={"/resume"} element={<Resume show={show} setShow={setShow}/>}/>
           <Route path={"/portfolio"} element={<Portfolio show={show} setShow={setShow}/>}/>
         </Routes>

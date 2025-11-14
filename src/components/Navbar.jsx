@@ -8,6 +8,7 @@ const Navbar = ({show}) => {
      <nav className={show ? 'nav mobile-nav': 'nav'}>
       <ul>
         <Link to={"/"}>Home</Link>
+        <Link to={"/about"}>About</Link>
         <Link to={"/resume"}>Resume</Link>
         <Link to={"/portfolio"}>Portfolio</Link>
       </ul>
