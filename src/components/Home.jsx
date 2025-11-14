@@ -42,7 +42,7 @@ const Home = ({ show, setShow }) => {
               <FaWhatsapp />
             </a>
           </ul>
-          <span>© 2024 Shivam Gupta. All rights reserved.</span>
+          <span>© 2025 Shivam Gupta. All rights reserved.</span>
         </footer>
       </section>
     </>
